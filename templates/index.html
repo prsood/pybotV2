@@ -1,0 +1,78 @@
+<html lang="nl" onpageshow='myFunction()'>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PybotV2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    
+</head>
+<div class="popupback">
+	<div class="popwindow">
+	<p class="popuptext">Please provide your valueable feedback</p>
+	<div class="options">
+	  <button class="btn">Yes</button>
+	  <button class="btn">No</button>
+	</div>
+  </div>
+</div>
+
+<body>
+    {% extends "root.html" %}
+    {% block content %}
+
+<center><section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-3 stats">
+				<i class="fa fa-bar-chart" aria-hidden="true"></i>
+				<div class="counting"><pre>{{userCount}}</pre></div>
+				<h5>Times used</h5>
+			</div>
+
+			<div class="col-lg-3 stats">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<div class="counting"><pre>{{uniqueUsers}}</pre></div>
+				<h5>Unique users</h5>
+			</div>
+
+			<div class="col-lg-3 stats">
+				<i class="fa fa-github " aria-hidden="true"></i>
+				<div class="counting" data-count="75"><pre>{{projectsHosted}}</pre></div>
+				<h5>Projects hosted</h5>
+			</div>
+
+			
+
+
+		</div>
+		<!-- end row -->
+	</div>
+	<!-- end container -->
+
+</section></center>
+<script>
+	function myfunction(){document.querySelector(".popupback").style.display = "block";}
+	
+    $('.counting').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+</script>
+
+<!-- end cont stats -->
+{% endblock %}
+    
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<html >
+{% extends "root.html" %}
+{% block content %}
+<div class="terminal-window" id='terminal-window'>
+    <div class="terminal_header">
+        <div class="button green"></div>
+        <div class="button yellow"></div>
+        <div class="button red"></div>
+    </div>
+    <section class="terminal">
+                
+        &#128194;  Welcome to KPI/Audit Report Utility<br><br>
+        <span  data-ty-prompt="▲">To download the the files click the links below</span><br><br>              
+       &#128204;   <a href="{{ url_for('kpi_1') }}" style="color:white">ISP-ISIS_LDP_Missing_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_2') }}" style="color:white">ISP-ISIS_IPv6_Missing_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_3') }}" style="color:white">ISP-Description_Deviation_Backbone_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_4') }}" style="color:white">ISP-ISIS_Metric_B2B_Deviation_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_5') }}" style="color:white">MPLS-ISIS_Metric_Deviation_10G_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_6') }}" style="color:white">CEN-LDP_Missing_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_7') }}" style="color:white">Junos-ISP-Interface-Report.csv</a><br><br>
+       <br><br>
+       <span  data-ty-prompt="▲">NNI Audit Files</span><br><br>
+       
+       &#128204;   <a href="{{ url_for('nni_kpi_1') }}" style="color:white">MPLS-NNI-Audit-Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('myapp') }}" style="color:white">myapp.log</a><br><br>
+       
+                
+          
+
+
+
+
+
+
+
+ {% endblock %}
+
+</html>

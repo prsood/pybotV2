@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<html >
+{% extends "root.html" %}
+{% block content %}
+<div class="terminal-window" id='terminal-window'>
+    <div class="terminal_header">
+        <div class="button green"></div>
+        <div class="button yellow"></div>
+        <div class="button red"></div>
+    </div>
+    <section class="terminal">
+                
+        &#128194;  Welcome to Database uitlity<br><br>
+        <span  data-ty-prompt="▲">For team or single user creation please mail to:</span><br><br>
+        &#128231; <a href="mailto:bhartinsoops@airtel.com" style="color:white;" >bhartinsoops@airtel.com</a><br><br>
+                <span  data-ty-prompt="▲">To download the utility pls click the link below:<span><br><br>
+                &#128073;  <a href="{{ url_for('dbApp') }}" style="color:white">Mysql Tools</a>
+                <br><br>
+           <h2> Guide to use DB utility</h2>
+           <span  data-ty-prompt="▲">Step 1-2</span>
+            <br><br>
+            <img src="{{ url_for('static', filename='images/image3.png') }}" class="imageguide">
+            <br><br>
+            <span  data-ty-prompt="▲">Step 3</span>
+            <br><br>
+            <img src="{{ url_for('static', filename='images/image4.png') }}" class="imageguide">
+            <br><br>
+            <span  data-ty-prompt="▲">Step 4</span>
+            <br><br>
+            <img src="{{ url_for('static', filename='images/image8.png') }}" class="imageguide">
+            <br><br>
+            <span  data-ty-prompt="▲">Step 5</span>
+            <br><br>
+            <img src="{{ url_for('static', filename='images/image5.png') }}" class="imageguide">
+            <br><br>
+            <span  data-ty-prompt="▲">Step 6</span>
+            <br><br>
+            <img src="{{ url_for('static', filename='images/image6.png') }}" class="imageguide">
+            <br><br>
+            <br><br>
+
+
+
+
+
+
+
+ {% endblock %}
+
+</html>

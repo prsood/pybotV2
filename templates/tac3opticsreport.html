@@ -1,0 +1,67 @@
+<!doctype html>
+</html>
+<head>
+	
+    {% extends "root.html" %}
+    {% block content %}
+    
+    <div class="terminal-window" id='terminal-window'>
+        <div class="terminal_header">
+            <div class="button green"></div>
+            <div class="button yellow"></div>
+            <div class="button red"></div>
+        </div>
+        <section class="terminal">
+            
+                <h3>Welcome to NOC Optics TAC-3 Automated Report Generator Utility</h3>
+                <p><b>Note: </b>This utility is created only for specific requirenments by NOC-Optics TAC3 Team.Follow the instructions.</p>
+            <div style="display:absolute;padding-top:63px; margin-left: 30%; text-align: left;" class="center1">
+            <p>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class=flashes>
+                    {% for message in messages %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+                {% endwith %}
+            </p>
+            <form  method="post" action="/tac3report" enctype="multipart/form-data">
+                <dl>
+                    <p>
+                        <input type="file" name="files[]" multiple="true" autocomplete="off" required>
+                    </p>
+                </dl>
+                <p>
+                    <input type="submit" value="Upload">
+                </p>
+            </form>
+        
+            <form method="post" action="/processtac3report" enctype="multipart/form-data">
+                <p>
+                    <input type="submit" value="Generate the Report">
+                </p>
+            </form>
+        
+            <form method="post" action="/downloadtac3report" enctype="multipart/form-data">
+                <p>
+                    <input type="submit" value="Download The Report">
+                </p>
+            </form>
+            </div>
+        
+            <br><br>
+        
+            
+       
+        </section>
+    </div>
+    
+    
+    {% endblock %}
+
+
+
+</html>
+

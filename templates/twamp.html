@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<html>
+{% extends "root.html" %}
+{% block content %}
+<div class="terminal-window" id='terminal-window'>
+    <div class="terminal_header">
+        <div class="button green"></div>
+        <div class="button yellow"></div>
+        <div class="button red"></div>
+    </div>
+    <section class="terminal">
+
+        &#128250; Welcome to TWAMP Portal<br><br>
+        &#128194; Existing Reports<br><br>
+        {%for i in f%}
+
+        &#128196; {{i}}<br>
+        {%endfor%}
+        <br><br>
+        
+        {{message}}
+        
+        
+        <br>
+        <form action="/twamp" method="POST" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <input type="file" class="custom-file-input" name="file" id="file">
+            </div>
+            <br>
+            <button style="left:10px" type="submit" class="btn btn-primary">Upload</button>
+
+        </form>
+        <!-- <span  data-ty-prompt="▲">To download the the files click the links below</span><br><br>              
+       &#128204;   <a href="{{ url_for('kpi_1') }}" style="color:white">ISP-ISIS_LDP_Missing_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_2') }}" style="color:white">ISP-ISIS_IPv6_Missing_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_3') }}" style="color:white">ISP-Description_Deviation_Backbone_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_4') }}" style="color:white">ISP-ISIS_Metric_B2B_Deviation_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_5') }}" style="color:white">MPLS-ISIS_Metric_Deviation_10G_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_6') }}" style="color:white">CEN-LDP_Missing_Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('kpi_7') }}" style="color:white">Junos-ISP-Interface-Report.csv</a><br><br>
+       <br><br>
+       <span  data-ty-prompt="▲">NNI Audit Files</span><br><br>
+       
+       &#128204;   <a href="{{ url_for('nni_kpi_1') }}" style="color:white">MPLS-NNI-Audit-Report.csv</a><br><br>
+       &#128204;   <a href="{{ url_for('myapp') }}" style="color:white">myapp.log</a><br><br> -->
+
+
+
+
+
+
+
+
+
+
+        {% endblock %}
+
+</html>

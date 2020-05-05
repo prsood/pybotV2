@@ -1,0 +1,119 @@
+ * Detected change in '/home/pybot/app.py', reloading
+Scheduler started
+b'Report has been generated successfully.\n'
+ * Restarting with stat
+  File "/home/pybot/app.py", line 428
+    if __name__ == '__main__':
+     ^
+IndentationError: expected an indented block
+Scheduler started
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 537-485-197
+10.79.26.77 - - [05/May/2020 23:16:17] "GET /twamp HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:17] "GET /static/css/main.css HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:17] "GET /static/images/pybot.png HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:19] "GET / HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:19] "GET /static/css/main.css HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:19] "GET /static/images/pybot.png HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:28] "GET /dashboard HTTP/1.1" 308 -
+10.79.26.77 - - [05/May/2020 23:16:28] "GET /dashboard/ HTTP/1.1" 302 -
+10.79.26.77 - - [05/May/2020 23:16:28] "GET /dashboard/login HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:28] "GET /dashboard/static/css/custom.css HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:30] "GET /dashboard/static/img/header.png HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:31] "GET /dashboard/static/js/angular-datatables.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:31] "GET /dashboard/static/js/custom.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:31] "GET /dashboard/static/js/app.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/services/form.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/services/endpoint.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/services/menu.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/services/info.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/services/pagination.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/services/plotly.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/controllers/apiPerformance.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/controllers/configuration.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/controllers/customGraph.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/controllers/dailyUtilization.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/controllers/endpointGroupedProfiler.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/controllers/reporting.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/controllers/endpointHourlyLoad.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/controllers/endpointOutlier.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:32] "GET /dashboard/static/js/controllers/endpointProfiler.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/controllers/endpointUsers.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/controllers/endpointVersion.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/controllers/endpointVersionIP.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/controllers/endpointVersionUser.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/controllers/hourlyLoad.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/controllers/statusCodeDistribution.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/controllers/monitorLevel.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/controllers/multiVersion.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/controllers/overview.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/controllers/util.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/directives.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:33] "GET /dashboard/static/js/filters.js HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:35] "POST /dashboard/login HTTP/1.1" 302 -
+10.79.26.77 - - [05/May/2020 23:16:35] "GET /dashboard/ HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/css/custom.css HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/angular-datatables.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/custom.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/services/info.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/services/form.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/app.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/services/endpoint.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/services/menu.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/services/pagination.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/services/plotly.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/apiPerformance.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/configuration.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/dailyUtilization.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/customGraph.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/reporting.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/endpointGroupedProfiler.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/endpointProfiler.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/endpointOutlier.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/endpointVersion.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/endpointUsers.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/endpointHourlyLoad.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/endpointVersionIP.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/endpointVersionUser.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:36] "GET /dashboard/static/js/controllers/hourlyLoad.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:37] "GET /dashboard/static/js/controllers/statusCodeDistribution.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:37] "GET /dashboard/static/js/controllers/monitorLevel.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:37] "GET /dashboard/static/js/controllers/overview.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:37] "GET /dashboard/static/js/controllers/multiVersion.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:37] "GET /dashboard/static/js/controllers/util.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:37] "GET /dashboard/static/js/directives.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:37] "GET /dashboard/static/js/filters.js HTTP/1.1" 304 -
+10.79.26.77 - - [05/May/2020 23:16:38] "GET /dashboard/static/elements/menu.html HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:39] "GET /dashboard/static/pages/overview.html HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:39] "GET /dashboard/static/img/favicon.ico HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:39] "GET /dashboard/api/custom_graphs HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:39] "GET /dashboard/api/overview HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:40] "GET /dashboard/static/elements/monitorLevel.html HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:16:40] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:24] "GET /dashboard/static/pages/plotly_graph.html HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:24] "GET /dashboard/static/elements/endpointDetails.html HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:24] "GET /dashboard/api/endpoint_info/15 HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:24] "GET /dashboard/api/hourly_load/2020-04-21/2020-05-05/15 HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:32] "GET /dashboard/api/endpoint_info/15 HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:32] "GET /dashboard/api/users/15 HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:32] "GET /dashboard/api/versions/15 HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:33] "POST /dashboard/api/version_user/15 HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:38] "GET /dashboard/api/versions/15 HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:38] "GET /dashboard/api/ip/15 HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:38] "GET /dashboard/api/endpoint_info/15 HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:17:38] "POST /dashboard/api/version_ip/15 HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:18:10] "GET /dashboard/api/overview HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:18:10] "GET /dashboard/api/deploy_details HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:18:39] "POST /dashboard/api/set_rule HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:18:42] "POST /dashboard/api/set_rule HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:18:44] "POST /dashboard/api/set_rule HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:18:45] "POST /dashboard/api/set_rule HTTP/1.1" 200 -
+10.79.26.77 - - [05/May/2020 23:18:52] "GET /dashboard/api/hourly_load/2020-04-21/2020-05-05 HTTP/1.1" 200 -
+213.33.158.154 - - [05/May/2020 23:19:33] "GET / HTTP/1.1" 200 -

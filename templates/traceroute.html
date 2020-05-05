@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<html>
+
+
+{% extends "root.html" %}
+{% block content %}
+
+<div class="terminal-window" id='terminal-window'>
+    <div class="terminal_header">
+        <div class="button green"></div>
+        <div class="button yellow"></div>
+        <div class="button red"></div>
+    </div>
+    <section class="terminal">
+        &#128250;  Traceroute Utility<br><br>
+        
+        <span  data-ty-prompt="▲">Enter username, password, Source IP, Destination IP and ping count to generate output </span><br><br>
+        <form id="form"method="POST">
+        <div class="block">
+            <span data-ty-prompt="➜" /><span data-ty-prompt1="Username -->"></span>
+            <input name="form" class="traceroute_input" type="text" />
+        </div><br>
+        <div class="block">
+            <span data-ty-prompt="➜" /><span data-ty-prompt1="Password -->"></span>
+            <input name="form1" class="traceroute_input" type="password" />
+        </div><br>
+        <div class="block">
+            <span data-ty-prompt="➜" /><span data-ty-prompt1="Source IP -->"></span>
+            <input name="form2" class="traceroute_input" type="text" />
+        </div><br>
+        <div class="block">
+            <span data-ty-prompt="➜" /><span data-ty-prompt1="Destination IP -->"></span>
+            <input name="form3" class="traceroute_input" type="text" />
+        </div><br>
+        <div class="block">
+            <span data-ty-prompt="➜" /><span data-ty-prompt1="Ping Count -->"></span>
+            <input name="form4" class="traceroute_input" type="text" />
+        </div><br>
+        <div class="block">
+           
+            <input type="submit" class ="btn"></input>
+        </div><br><br>
+        
+    </form>
+        
+        <br><br>
+        
+
+        
+       
+    </section>
+</div>
+
+
+{% endblock %}
+
+</html>

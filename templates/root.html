@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PybotV2</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    
+</head>
+
+<body >
+    <header>
+        <a class="logo" href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/pybot.png') }}" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="{{ url_for('feedback') }}" >Feedback</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    
+    <aside>
+        <a href="{{ url_for('nniaudit') }}">NNI Audit Utility</a>
+        <a href="{{ url_for('twamp') }}">TWAMP Portal</a>
+        <a href="{{ url_for('traceroute') }}">Backbone Path Trace tool</a>
+        <a href="{{ url_for('genie') }}">Genie utility</a>
+        <a href="{{ url_for('db') }}">Database utility</a>
+        <a href="{{ url_for('kpi') }}">Audit & KPI Reports utility</a>
+        <a href="http://172.30.1.129:5000" target="_blank">MPLS ISP Database Portal</a>
+        <a href="http://172.30.1.129:5080" target="_blank">Juniper backup Portal</a>
+        <a href="{{ url_for('upload_form') }}">TAC-3 Report Generator</a>
+        
+        
+    </aside>
+    <!-- start count stats -->
+    {% block content %}
+    {% endblock %}
+
+
+
+
+
+
+</body>
+
+</html>

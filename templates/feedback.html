@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<html>
+
+<head>
+  <title>Feedback</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+</head>
+<div class="loaderback">
+  <div class="loadingtext">Generating Output<br /><br />Please Wait this might take some time</div>
+  <div class="loader">
+    <svg>
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2" result="gooey" />
+          <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+</div>
+
+{% extends "root.html" %}
+{% block content %}
+<div class="terminal-window" id='terminal-window'>
+  <div class="terminal_header">
+    <div class="button green"></div>
+    <div class="button yellow"></div>
+    <div class="button red"></div>
+  </div>
+  <section class="terminal">
+    <div class="text-center">
+      <h6>Kindly provide your valuable Feedback for our utilities,So we can improve the tools.</h6>
+      <h6 style="margin-top: 15px; text-align: center; color:#D76D77"><u>{{msg}}</u></h6>
+    </div>
+    <div class="container" style="background-color:transparent ; margin-top: 25px;width:400px; border-radius: 50px">
+      <form class="form-horizontal" method="post">
+
+        <div class="form-group">
+
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="Name" placeholder="Enter Name" name="Name" required>
+          </div>
+        </div>
+        <div class="form-group">
+
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="id1" placeholder="Enter OLM ID" name="id1"required>
+          </div>
+        </div>
+        <div class="form-group">
+
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="Email" placeholder="Enter Email ID:" name="Email"required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label style="padding-left: 15px;">Select Tool:</label>
+          <div class="col-sm-10">
+            <select id="mySelect" name="tools">
+              <option value="MPLS-Trace-Route">MPLS-Trace Route</option>
+              <option value="MPLS-ISP Database-GUI">MPLS/ISP Database </option>
+              <option value="CEN-DATABASE">CEN Database</option>
+              <option value="URL-Audit ">URL-Audit</option>
+              <option value="Juniper-Backup">Juniper-Backup GUI Portal</option>
+              <option value="Optics-TAC3 ">Optics-TAC3 Auto Reporting</option>
+              <option value="Auto-Config-Juniper">Auto Config Push-Juniper</option>
+              <option value="NNI-Audit-Reporting">Auto Config Push-Juniper</option>
+              <option value="KPI-Audit-Reporting">Auto Config Push-Juniper</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <div class="col-sm-10">
+            <textarea class="form-control" id="feedback" placeholder="Enter Feedback:" name="feedback" cols="50" rows="5"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <div class="col-sm-10">
+            <textarea class="form-control" id="suggestion" placeholder="Enter Suggestion:" name="suggestion" cols="50" rows="5"></textarea>
+          </div>
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-default float" style="border: 2px solid #22BFA0; display:absolute; left:20%; margin-top:20px; ">Submit</button>
+          </div>
+          
+        </div>
+
+
+
+        <!--  <div class="form-group">  
+         
+          <div class="col-sm-offset-2 col-sm-3">
+              <div class="align-self-center mx-auto">
+            <button type="submit" value="Submit"> Submit</button>
+          </div>
+    </div>
+        </div>
+     -->
+       
+
+      </form>
+    </div>
+
+
+
+
+  </section>
+</div>
+
+
+
+
+
+<script>
+  function loading() {
+    document.querySelector(".loaderback").style.display = "block";
+  }
+
+</script>
+
+{% endblock %}
+
+</html>
