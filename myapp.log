@@ -12695,3 +12695,703 @@
 05/05/2020 08:06:02 PM findNNIconfigAudit : Interfaces difference between primary and secondary is 23
 05/05/2020 08:06:02 PM findNNIconfigAudit : Total config lines at primary NNI is 1889 and at secondary NNI is 1222 and diffrance is 667
 05/05/2020 08:06:02 PM findNNIconfigAudit : That took 116.01019406318665 seconds
+05/06/2020 12:32:35 AM findNNIconfigAudit : Started audit for device IP 202.123.43.50 and Bundel-Ether9
+05/06/2020 12:32:41 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:32:42 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:32:47 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:32:53 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 has Primary NNI of Bundle-Ether9 and peer device is 202.123.43.51 
+05/06/2020 12:32:58 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:32:59 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:33:04 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:33:10 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-51 has Secondary NNI of Bundle-Ether9 and peer device is 202.123.43.50 
+05/06/2020 12:33:10 AM findNNIconfigAudit : PrimaryDevice = DRM-PEN-MPL-LTE-PE-RTR-43-50[202.123.43.50]  and SecondaryDevice = DRM-PEN-MPL-LTE-PE-RTR-43-51[202.123.43.51]
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.2416 COIMBATURE-LTE-Signalling-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.1401 COIMBATURE-LTE-Data-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.1402 COIMBATURE-LTE-Data-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.2403 COIMBATURE-LTE-Signalling-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.3405 COIMBATURE-LTE-OnM-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.2400 COIMBATURE-LTE-Signalling-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.2402 COIMBATURE-LTE-Signalling-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.1416 COIMBATURE-LTE-Data-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.3402 COIMBATURE-LTE-OnM-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.3401 COIMBATURE-LTE-OnM-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.3403 COIMBATURE-LTE-OnM-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.1400 COIMBATURE-LTE-Data-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.1403 COIMBATURE-LTE-Data-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.1405 COIMBATURE-LTE-Data-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.3416 COIMBATURE-LTE-OnM-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.3400 COIMBATURE-LTE-OnM-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.2401 COIMBATURE-LTE-Signalling-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 Bundle-Ether9.2405 COIMBATURE-LTE-Signalling-M
+05/06/2020 12:33:11 AM findNNIconfigAudit : Finding config on device : DRM-PEN-MPL-LTE-PE-RTR-43-50
+05/06/2020 12:33:12 AM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 12:33:12 AM findNNIconfigAudit : IN_MOBILITY-DSCP-DATA
+05/06/2020 12:33:12 AM findNNIconfigAudit : OUT_MOBILITY-DSCP-DATA
+05/06/2020 12:33:12 AM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 12:33:12 AM findNNIconfigAudit : MOBILITY-DSCP-IPP5
+05/06/2020 12:33:12 AM findNNIconfigAudit : MOBILITY-DSCP-IPP4
+05/06/2020 12:33:12 AM findNNIconfigAudit : MOBILITY-DSCP-IPP2
+05/06/2020 12:33:12 AM findNNIconfigAudit : MOBILITY-DSCP-IPP1
+05/06/2020 12:33:12 AM findNNIconfigAudit : class-default
+05/06/2020 12:33:12 AM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 09:36:01 AM findNNIconfigAudit : Started audit for device IP 202.123.42.20 and Bundel-Ether3
+05/06/2020 09:36:06 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 09:36:07 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 09:36:12 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 09:36:25 AM findNNIconfigAudit : Started audit for device IP 202.123.42.20 and Bundel-Ether3
+05/06/2020 09:36:30 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 09:36:31 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 09:36:35 AM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-20 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.64 
+05/06/2020 09:36:35 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 09:36:40 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 09:36:41 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 09:36:45 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 09:36:59 AM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-20 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.64 
+05/06/2020 09:37:04 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 09:37:04 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 09:37:09 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 09:37:10 AM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-64 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.20 
+05/06/2020 09:37:10 AM findNNIconfigAudit : PrimaryDevice = MUM-CHV-MPL-LTE-PE-RTR-42-20[202.123.42.20]  and SecondaryDevice = MUM-CHV-MPL-LTE-PE-RTR-42-64[202.123.42.64]
+05/06/2020 09:37:11 AM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-20 Bundle-Ether3.2324 INDUS-TOWER-4-S
+05/06/2020 09:37:11 AM findNNIconfigAudit : ====== 1 extra interface present on secondary NNI =======
+05/06/2020 09:37:11 AM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-64 Bundle-Ether3.94472
+05/06/2020 09:37:11 AM findNNIconfigAudit : Finding config on device : MUM-CHV-MPL-LTE-PE-RTR-42-20
+05/06/2020 09:37:11 AM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 09:37:11 AM findNNIconfigAudit : in_STANDARD_ETH_16384
+05/06/2020 09:37:11 AM findNNIconfigAudit : out_STANDARD_ETH_16384
+05/06/2020 09:37:11 AM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 09:37:11 AM findNNIconfigAudit : class-default
+05/06/2020 09:37:11 AM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 09:37:33 AM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-64 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.20 
+05/06/2020 09:37:33 AM findNNIconfigAudit : PrimaryDevice = MUM-CHV-MPL-LTE-PE-RTR-42-20[202.123.42.20]  and SecondaryDevice = MUM-CHV-MPL-LTE-PE-RTR-42-64[202.123.42.64]
+05/06/2020 09:37:34 AM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-20 Bundle-Ether3.2324 INDUS-TOWER-4-S
+05/06/2020 09:37:34 AM findNNIconfigAudit : ====== 1 extra interface present on secondary NNI =======
+05/06/2020 09:37:34 AM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-64 Bundle-Ether3.94472
+05/06/2020 09:37:34 AM findNNIconfigAudit : Finding config on device : MUM-CHV-MPL-LTE-PE-RTR-42-20
+05/06/2020 09:37:34 AM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 09:37:34 AM findNNIconfigAudit : in_STANDARD_ETH_16384
+05/06/2020 09:37:34 AM findNNIconfigAudit : out_STANDARD_ETH_16384
+05/06/2020 09:37:35 AM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 09:37:35 AM findNNIconfigAudit : class-default
+05/06/2020 09:37:35 AM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 09:38:28 AM findNNIconfigAudit : Started audit for device IP 202.123.42.147 and Bundel-Ether7
+05/06/2020 09:38:33 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 09:38:34 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 09:38:39 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 09:38:49 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 has Primary NNI of Bundle-Ether7 and peer device is 202.123.42.148 
+05/06/2020 09:38:54 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 09:38:55 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 09:39:00 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 09:39:07 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-148 has Secondary NNI of Bundle-Ether7 and peer device is 202.123.42.147 
+05/06/2020 09:39:07 AM findNNIconfigAudit : PrimaryDevice = JMD-MPL-LTE-PE-RTR-42-147[202.123.42.147]  and SecondaryDevice = JMD-MPL-LTE-PE-RTR-42-148[202.123.42.148]
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.13057 C-Edge-Technologies-23-S81
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.5561 State-Bank-of-India-3-M
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.6330 BBNL-INTERNET
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.7765 BBNL-INTERNET
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.8270 SAIL-RMD-M
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.8215 BBNL-INTERNET
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.6450 BBNL-INTERNET
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.7165 BANK-OF-INDIA-2-Mesh
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.65412 State-Bank-of-India-3-M
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.6787 BBNL-INTERNET
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.65411 State-Bank-of-India-3-M
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.9314 Jharkhand-Police-S62
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.65925 WI-MAX-MANAGEMENT
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.8001 SAIL-RMD-M
+05/06/2020 09:39:08 AM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.7423 CHOLAMANDALAM-2-S6
+05/06/2020 09:39:08 AM findNNIconfigAudit : Finding config on device : JMD-MPL-LTE-PE-RTR-42-147
+05/06/2020 09:39:09 AM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 09:39:09 AM findNNIconfigAudit : in_BUSINESS_ETH_2048
+05/06/2020 09:39:09 AM findNNIconfigAudit : out_BUSINESS_ETH_2048
+05/06/2020 09:39:09 AM findNNIconfigAudit : PARENT_in_P25_B65_S10_2048
+05/06/2020 09:39:09 AM findNNIconfigAudit : PARENT_out_P25_B65_S10_2048
+05/06/2020 09:39:09 AM findNNIconfigAudit : in_STANDARD_ETH_4096
+05/06/2020 09:39:09 AM findNNIconfigAudit : out_STANDARD_ETH_4096
+05/06/2020 09:39:09 AM findNNIconfigAudit : in_STANDARD_ETH_10240
+05/06/2020 09:39:09 AM findNNIconfigAudit : out_STANDARD_ETH_10240
+05/06/2020 09:39:09 AM findNNIconfigAudit : PARENT_in_P20_B80_2048
+05/06/2020 09:39:09 AM findNNIconfigAudit : PARENT_out_P20_B80_2048
+05/06/2020 09:39:09 AM findNNIconfigAudit : in_STANDARD_ETH_2048
+05/06/2020 09:39:09 AM findNNIconfigAudit : out_STANDARD_ETH_2048
+05/06/2020 09:39:09 AM findNNIconfigAudit : in_STANDARD_ETH_5120
+05/06/2020 09:39:09 AM findNNIconfigAudit : out_STANDARD_ETH_5120
+05/06/2020 09:39:09 AM findNNIconfigAudit : in_STANDARD_ETH_512
+05/06/2020 09:39:09 AM findNNIconfigAudit : out_STANDARD_ETH_512
+05/06/2020 09:39:09 AM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 09:39:09 AM findNNIconfigAudit : class-default
+05/06/2020 09:39:09 AM findNNIconfigAudit : PREMIUM_RT
+05/06/2020 09:39:09 AM findNNIconfigAudit : BUSINESS
+05/06/2020 09:39:09 AM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 09:39:09 AM findNNIconfigAudit : Finding config on device : JMD-MPL-LTE-PE-RTR-42-148
+05/06/2020 09:39:09 AM findNNIconfigAudit : Interfaces difference between primary and secondary is 15
+05/06/2020 09:39:09 AM findNNIconfigAudit : Total config lines at primary NNI is 1088 and at secondary NNI is 213 and diffrance is 875
+05/06/2020 09:39:09 AM findNNIconfigAudit : That took 41.57577395439148 seconds
+05/06/2020 10:52:19 AM findNNIconfigAudit : Started audit for device IP 202.123.42.120 and Bundel-Ether2
+05/06/2020 10:52:24 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 10:52:25 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 10:52:30 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 10:52:50 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-120 has Primary NNI of Bundle-Ether2 and peer device is 202.123.42.152 
+05/06/2020 10:52:55 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 10:52:56 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 10:53:01 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 10:53:20 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 has Secondary NNI of Bundle-Ether2 and peer device is 202.123.42.120 
+05/06/2020 10:53:20 AM findNNIconfigAudit : PrimaryDevice = ASN-MPL-LTE-PE-RTR-42-120[202.123.42.120]  and SecondaryDevice = ASN-MPL-LTE-PE-RTR-42-152[202.123.42.152]
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-120 Bundle-Ether2.7146 TECHINFY-SOLUTIONS-S
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-120 Bundle-Ether2.6812 WI-MAX-MANAGEMENT
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-120 Bundle-Ether2.7920 WEBEL-TECHNOLOGY-4-M
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-120 Bundle-Ether2.633 INDIAN-OIL-CORPORATION-2-M
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-120 Bundle-Ether2.8710 WEBEL-TECHNOLOGY-5-M
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-120 Bundle-Ether2.9000 Fullerton-India-Credit-S6
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-120 Bundle-Ether2.7910 Punjab-National-M
+05/06/2020 10:53:22 AM findNNIconfigAudit : ====== 22 extra interface present on secondary NNI =======
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.6054
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.7012
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.6570
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.5799
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.5018
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.8699
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.9986
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.5555
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.5177
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.6955
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.6558
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.5649
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.6669
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.8601
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.7118
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.5381
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.8167
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.5099
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.9081
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.9941
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.12618
+05/06/2020 10:53:22 AM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 Bundle-Ether2.8618
+05/06/2020 10:53:22 AM findNNIconfigAudit : Finding config on device : ASN-MPL-LTE-PE-RTR-42-120
+05/06/2020 10:53:22 AM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 10:53:22 AM findNNIconfigAudit : in_Premium_RT_ETH_8192
+05/06/2020 10:53:22 AM findNNIconfigAudit : out_Premium_RT_ETH_8192
+05/06/2020 10:53:22 AM findNNIconfigAudit : in_STANDARD_ETH_5120
+05/06/2020 10:53:22 AM findNNIconfigAudit : out_STANDARD_ETH_5120
+05/06/2020 10:53:22 AM findNNIconfigAudit : in_BUSINESS_ETH_2048
+05/06/2020 10:53:22 AM findNNIconfigAudit : out_BUSINESS_ETH_2048
+05/06/2020 10:53:22 AM findNNIconfigAudit : PARENT_in_IOCL-ML3-2-67
+05/06/2020 10:53:22 AM findNNIconfigAudit : PARENT_out_IOCL-ML3-2-67
+05/06/2020 10:53:22 AM findNNIconfigAudit : in_STANDARD_ETH_2048
+05/06/2020 10:53:22 AM findNNIconfigAudit : out_STANDARD_ETH_2048
+05/06/2020 10:53:22 AM findNNIconfigAudit : in_BUSINESS_ETH_1024
+05/06/2020 10:53:22 AM findNNIconfigAudit : out_BUSINESS_ETH_1024
+05/06/2020 10:53:22 AM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 10:53:22 AM findNNIconfigAudit : class-default
+05/06/2020 10:53:22 AM findNNIconfigAudit : PREMIUM_RT
+05/06/2020 10:53:22 AM findNNIconfigAudit : BUSINESS
+05/06/2020 10:53:22 AM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 10:53:22 AM findNNIconfigAudit : Finding config on device : ASN-MPL-LTE-PE-RTR-42-152
+05/06/2020 10:53:24 AM findNNIconfigAudit : Interfaces difference between primary and secondary is 7
+05/06/2020 10:53:24 AM findNNIconfigAudit : Total config lines at primary NNI is 1972 and at secondary NNI is 1086 and diffrance is 886
+05/06/2020 10:53:24 AM findNNIconfigAudit : That took 64.53308176994324 seconds
+05/06/2020 11:45:13 AM findNNIconfigAudit : Started audit for device IP 202.123.37.146 and Bundel-Ether20
+05/06/2020 11:45:18 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 11:45:19 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 11:45:24 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 11:45:38 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-146 has Secondary NNI of Bundle-Ether20 and peer device is 202.123.37.147 
+05/06/2020 11:45:43 AM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 11:45:44 AM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 11:45:49 AM findNNIconfigAudit : promptOutput is 
+05/06/2020 11:46:03 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 has Primary NNI of Bundle-Ether20 and peer device is 202.123.37.146 
+05/06/2020 11:46:03 AM findNNIconfigAudit : PrimaryDevice = CUT-MPL-LTE-PE-RTR-37-147[202.123.37.147]  and SecondaryDevice = CUT-MPL-LTE-PE-RTR-37-146[202.123.37.146]
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31258 BBNL-INTERNET
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31255 VE-COMMERCIAL-VEHICLES-S3
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31256 CBI-M
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31266 APOLLO-TYRES-3-M
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31269 DTDC-EXPRESS-LTD-S19
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31254 BBNL-INTERNET
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31262 AXIS-BANK-7-MESH
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31261 GOODLASS-NEROLAC-S
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31268 SUGUNA-FOODS-S2
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31257 APOLLO-TYRES-3-M
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31264 HINDUSTAN-PENCILS-M
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31252 BBNL-INTERNET
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31260 HAVELLS-INDIA-2-M
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31267 BERGER-PAINTS-M
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31265 ITC-M
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 Bundle-Ether20.31263 WI-MAX-MANAGEMENT
+05/06/2020 11:46:04 AM findNNIconfigAudit : ====== 2 extra interface present on secondary NNI =======
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-146 Bundle-Ether20.6594
+05/06/2020 11:46:04 AM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-146 Bundle-Ether20.5004
+05/06/2020 11:46:04 AM findNNIconfigAudit : Finding config on device : CUT-MPL-LTE-PE-RTR-37-147
+05/06/2020 11:46:05 AM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 11:46:05 AM findNNIconfigAudit : in_STANDARD_ETH_10240
+05/06/2020 11:46:05 AM findNNIconfigAudit : out_STANDARD_ETH_10240
+05/06/2020 11:46:05 AM findNNIconfigAudit : in_BUSINESS_ETH_512
+05/06/2020 11:46:05 AM findNNIconfigAudit : out_BUSINESS_ETH_512
+05/06/2020 11:46:05 AM findNNIconfigAudit : in_BUSINESS_ETH_2048
+05/06/2020 11:46:05 AM findNNIconfigAudit : out_BUSINESS_ETH_2048
+05/06/2020 11:46:05 AM findNNIconfigAudit : in_BUSINESS_ETH_1024
+05/06/2020 11:46:05 AM findNNIconfigAudit : out_BUSINESS_ETH_1024
+05/06/2020 11:46:05 AM findNNIconfigAudit : in_STANDARD_ETH_2048
+05/06/2020 11:46:05 AM findNNIconfigAudit : out_STANDARD_ETH_2048
+05/06/2020 11:46:05 AM findNNIconfigAudit : in_STANDARD_ETH_1024
+05/06/2020 11:46:05 AM findNNIconfigAudit : out_STANDARD_ETH_1024
+05/06/2020 11:46:05 AM findNNIconfigAudit : in_STANDARD_ETH_128
+05/06/2020 11:46:05 AM findNNIconfigAudit : out_STANDARD_ETH_128
+05/06/2020 11:46:05 AM findNNIconfigAudit : in_STANDARD_ETH_5120
+05/06/2020 11:46:05 AM findNNIconfigAudit : out_STANDARD_ETH_5120
+05/06/2020 11:46:05 AM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 11:46:05 AM findNNIconfigAudit : class-default
+05/06/2020 11:46:05 AM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 11:46:05 AM findNNIconfigAudit : Finding config on device : CUT-MPL-LTE-PE-RTR-37-146
+05/06/2020 11:46:07 AM findNNIconfigAudit : Interfaces difference between primary and secondary is 16
+05/06/2020 11:46:07 AM findNNIconfigAudit : Total config lines at primary NNI is 1027 and at secondary NNI is 319 and diffrance is 708
+05/06/2020 11:46:07 AM findNNIconfigAudit : That took 54.19531583786011 seconds
+05/06/2020 12:24:05 PM findNNIconfigAudit : Started audit for device IP 202.123.42.20 and Bundel-Ether3
+05/06/2020 12:24:10 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:24:11 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:24:15 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:24:39 PM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-20 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.64 
+05/06/2020 12:24:44 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:24:45 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:24:50 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:25:13 PM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-64 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.20 
+05/06/2020 12:25:13 PM findNNIconfigAudit : PrimaryDevice = MUM-CHV-MPL-LTE-PE-RTR-42-20[202.123.42.20]  and SecondaryDevice = MUM-CHV-MPL-LTE-PE-RTR-42-64[202.123.42.64]
+05/06/2020 12:25:15 PM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-20 Bundle-Ether3.2324 INDUS-TOWER-4-S
+05/06/2020 12:25:15 PM findNNIconfigAudit : ====== 1 extra interface present on secondary NNI =======
+05/06/2020 12:25:15 PM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-64 Bundle-Ether3.94472
+05/06/2020 12:25:15 PM findNNIconfigAudit : Finding config on device : MUM-CHV-MPL-LTE-PE-RTR-42-20
+05/06/2020 12:25:15 PM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 12:25:15 PM findNNIconfigAudit : in_STANDARD_ETH_16384
+05/06/2020 12:25:15 PM findNNIconfigAudit : out_STANDARD_ETH_16384
+05/06/2020 12:25:15 PM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 12:25:15 PM findNNIconfigAudit : class-default
+05/06/2020 12:25:15 PM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 12:31:08 PM findNNIconfigAudit : Started audit for device IP 202.123.34.15 and Bundel-Ether5
+05/06/2020 12:31:13 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:31:14 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:31:18 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:31:23 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 has Primary NNI of Bundle-Ether5 and peer device is 202.123.34.14 
+05/06/2020 12:31:28 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:31:29 PM findNNIconfigAudit : Authentication (password) failed.
+05/06/2020 12:31:29 PM findNNIconfigAudit : None has None NNI of Bundle-Ether5 and peer device is None 
+05/06/2020 12:31:29 PM findNNIconfigAudit : PrimaryDevice = ADP-ASB-MPL-LTE-PE-RTR-34-15[202.123.34.15]  and SecondaryDevice = None[None]
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.58928 DIT-PDC-S15
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8757 NARESH-KUMAR-S2
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6000 Bajaj-Finance-Ltd-S18
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6969 DTDC-EXPRESS-LTD-S4
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5556 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9493 HDFC-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8758 State-Bank-of-India-3-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6326 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.7841 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9876 UCO-Bank-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5603 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8754 NARESH-KUMAR-S
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5892 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6073 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.7142 INDIAN-OIL-CORPORATION-2-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5163 BANK-OF-INDIA-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.66551 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6639 CANARA-BANK-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.66553 State-Bank-of-India-3-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.7003 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5291 AXIS-BANK-7-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8479 l2transport
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9875 BBNL-INTERNET
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.2701 RFMS-MGMT-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6347 Punjab-National-6-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5664 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.7851 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6451 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6901 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5073 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5432 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9073 Punjab-National-6-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6161 State-Bank-of-India-3-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9034 HDFC-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8751 HOUSING-DEVELOPMENT-BANK-S8
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6169 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8852 State-Bank-of-India-3-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6861 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.66555 AXIS-BANK-7-S15
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.98498 Punjab-National-6-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5791 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6053 Punjab-National-6-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.7956 HDFC-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5220 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5665 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5621 State-Bank-of-India-3-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.7093 Punjab-National-6-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9874 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5601 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.7456 Punjab-National-5-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8756 HDFC-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8473 Punjab-National-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5127 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9975 HP-SOCIETY-PROMOTION-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.66556 State-Bank-of-India-3-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5620 State-Bank-of-India-3-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5320 CBI-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8719 National-Fertilizers-Ltd-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5120 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.66554 HDFC-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5992 ICICI-BANK-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6897 Punjab-National-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.7120 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8755 BIRLA-MANAGEMENT-CENTER-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9877 Punjab-National-6-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6875 UCO-Bank-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5602 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6812 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5353 Punjab-National-6-MESH
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.66552 ALLAHABAD-BANK-2-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6769 YADU-CORPORATION-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.7492 YES-BANK-S68
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8821 BANK-OF-INDIA-2-Mesh
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9466 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.7563 AXIS-BANK-7-S3
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9879 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.5017 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8753 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.6122 BBNL-INTERNET
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8899 HP-SOCIETY-PROMOTION-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.9463 HDFC-M
+05/06/2020 12:31:31 PM findNNIconfigAudit : ADP-ASB-MPL-LTE-PE-RTR-34-15 Bundle-Ether5.8752 WI-MAX-MANAGEMENT
+05/06/2020 12:31:31 PM findNNIconfigAudit : Finding config on device : ADP-ASB-MPL-LTE-PE-RTR-34-15
+05/06/2020 12:31:32 PM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_STANDARD_ETH_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_STANDARD_ETH_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_BUSINESS_ETH_512
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_BUSINESS_ETH_512
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_BUSINESS_ETH_1024
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_BUSINESS_ETH_1024
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_STANDARD_ETH_5120
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_STANDARD_ETH_5120
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_BUSINESS_ETH_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_BUSINESS_ETH_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_in_P25_B65_S10_4096
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_out_P25_B65_S10_4096
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_STANDARD_5120
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_STANDARD_5120
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_in_IOCL-ML3-2-987
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_out_IOCL-ML3-2-987
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_in_P20_B80_512
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_out_P20_B80_512
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_STANDARD_ETH_256
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_STANDARD_ETH_256
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_in_SBI_RT_B_S_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_out_SBI_RT_B_S_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : input
+05/06/2020 12:31:32 PM findNNIconfigAudit : output
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_STANDARD_ETH_4096
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_STANDARD_ETH_4096
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_STANDARD_ETH_512
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_STANDARD_ETH_512
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_in_P25_B65_S10_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_out_P25_B65_S10_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_in_P50_N30_S20_ICIB_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_out_P50_N30_S20_ICIB_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_STANDARD_ETH_4506
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_STANDARD_ETH_4506
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_BUSINESS_ETH_4096
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_BUSINESS_ETH_4096
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_Premium_RT_ETH_128
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_Premium_RT_ETH_128
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_in_P20_B80_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : PARENT_out_P20_B80_2048
+05/06/2020 12:31:32 PM findNNIconfigAudit : in_STANDARD_ETH_8192
+05/06/2020 12:31:32 PM findNNIconfigAudit : out_STANDARD_ETH_8192
+05/06/2020 12:31:32 PM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 12:31:32 PM findNNIconfigAudit : class-default
+05/06/2020 12:31:32 PM findNNIconfigAudit : PREMIUM_RT
+05/06/2020 12:31:32 PM findNNIconfigAudit : BUSINESS
+05/06/2020 12:31:32 PM findNNIconfigAudit : ICIB_DSCP_EF
+05/06/2020 12:31:32 PM findNNIconfigAudit : ICIB_DSCP_AF
+05/06/2020 12:31:32 PM findNNIconfigAudit : Premium_RT
+05/06/2020 12:31:32 PM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 12:31:32 PM findNNIconfigAudit : Interfaces difference between primary and secondary is 82
+05/06/2020 12:31:32 PM findNNIconfigAudit : Total config lines at primary NNI is 2187 and at secondary NNI is 186 and diffrance is 2001
+05/06/2020 12:31:32 PM findNNIconfigAudit : That took 24.443373918533325 seconds
+05/06/2020 12:34:54 PM findNNIconfigAudit : Started audit for device IP 202.123.43.50 and Bundel-Ether9
+05/06/2020 12:34:59 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:35:00 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:35:05 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:35:10 PM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-50 has Primary NNI of Bundle-Ether9 and peer device is 202.123.43.51 
+05/06/2020 12:35:16 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:35:17 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:35:22 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:35:28 PM findNNIconfigAudit : DRM-PEN-MPL-LTE-PE-RTR-43-51 has Secondary NNI of Bundle-Ether9 and peer device is 202.123.43.50 
+05/06/2020 12:35:28 PM findNNIconfigAudit : PrimaryDevice = DRM-PEN-MPL-LTE-PE-RTR-43-50[202.123.43.50]  and SecondaryDevice = DRM-PEN-MPL-LTE-PE-RTR-43-51[202.123.43.51]
+05/06/2020 12:36:16 PM findNNIconfigAudit : Started audit for device IP 202.123.42.147 and Bundel-Ether7
+05/06/2020 12:36:21 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:36:22 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:36:27 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:36:37 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 has Primary NNI of Bundle-Ether7 and peer device is 202.123.42.148 
+05/06/2020 12:36:43 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:36:44 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:36:48 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:36:55 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-148 has Secondary NNI of Bundle-Ether7 and peer device is 202.123.42.147 
+05/06/2020 12:36:55 PM findNNIconfigAudit : PrimaryDevice = JMD-MPL-LTE-PE-RTR-42-147[202.123.42.147]  and SecondaryDevice = JMD-MPL-LTE-PE-RTR-42-148[202.123.42.148]
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.8001 SAIL-RMD-M
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.6330 BBNL-INTERNET
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.8270 SAIL-RMD-M
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.7765 BBNL-INTERNET
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.65412 State-Bank-of-India-3-M
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.7423 CHOLAMANDALAM-2-S6
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.65925 WI-MAX-MANAGEMENT
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.6450 BBNL-INTERNET
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.8215 BBNL-INTERNET
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.5561 State-Bank-of-India-3-M
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.9314 Jharkhand-Police-S62
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.65411 State-Bank-of-India-3-M
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.6787 BBNL-INTERNET
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.13057 C-Edge-Technologies-23-S81
+05/06/2020 12:36:56 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 Bundle-Ether7.7165 BANK-OF-INDIA-2-Mesh
+05/06/2020 12:36:56 PM findNNIconfigAudit : Finding config on device : JMD-MPL-LTE-PE-RTR-42-147
+05/06/2020 12:36:57 PM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 12:36:57 PM findNNIconfigAudit : in_BUSINESS_ETH_2048
+05/06/2020 12:36:57 PM findNNIconfigAudit : out_BUSINESS_ETH_2048
+05/06/2020 12:36:57 PM findNNIconfigAudit : in_STANDARD_ETH_4096
+05/06/2020 12:36:57 PM findNNIconfigAudit : out_STANDARD_ETH_4096
+05/06/2020 12:36:57 PM findNNIconfigAudit : in_STANDARD_ETH_10240
+05/06/2020 12:36:57 PM findNNIconfigAudit : out_STANDARD_ETH_10240
+05/06/2020 12:36:57 PM findNNIconfigAudit : PARENT_in_P25_B65_S10_2048
+05/06/2020 12:36:57 PM findNNIconfigAudit : PARENT_out_P25_B65_S10_2048
+05/06/2020 12:36:57 PM findNNIconfigAudit : in_STANDARD_ETH_512
+05/06/2020 12:36:57 PM findNNIconfigAudit : out_STANDARD_ETH_512
+05/06/2020 12:36:57 PM findNNIconfigAudit : in_STANDARD_ETH_5120
+05/06/2020 12:36:57 PM findNNIconfigAudit : out_STANDARD_ETH_5120
+05/06/2020 12:36:57 PM findNNIconfigAudit : in_STANDARD_ETH_2048
+05/06/2020 12:36:57 PM findNNIconfigAudit : out_STANDARD_ETH_2048
+05/06/2020 12:36:57 PM findNNIconfigAudit : PARENT_in_P20_B80_2048
+05/06/2020 12:36:57 PM findNNIconfigAudit : PARENT_out_P20_B80_2048
+05/06/2020 12:36:57 PM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 12:36:57 PM findNNIconfigAudit : class-default
+05/06/2020 12:36:57 PM findNNIconfigAudit : PREMIUM_RT
+05/06/2020 12:36:57 PM findNNIconfigAudit : BUSINESS
+05/06/2020 12:36:57 PM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 12:36:57 PM findNNIconfigAudit : Finding config on device : JMD-MPL-LTE-PE-RTR-42-148
+05/06/2020 12:36:58 PM findNNIconfigAudit : Interfaces difference between primary and secondary is 15
+05/06/2020 12:36:58 PM findNNIconfigAudit : Total config lines at primary NNI is 1088 and at secondary NNI is 443 and diffrance is 645
+05/06/2020 12:36:58 PM findNNIconfigAudit : That took 42.08387994766235 seconds
+05/06/2020 12:37:32 PM findNNIconfigAudit : Started audit for device IP 202.123.42.1 and Bundel-Ether3
+05/06/2020 12:37:37 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:37:38 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:37:43 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:38:05 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.2 
+05/06/2020 12:38:11 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:38:11 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:38:16 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:38:38 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-2 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.1 
+05/06/2020 12:38:38 PM findNNIconfigAudit : PrimaryDevice = MNR-MPL-LTE-PE-RTR-42-1[202.123.42.1]  and SecondaryDevice = MNR-MPL-LTE-PE-RTR-42-2[202.123.42.2]
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7465 SYNDICATE-BANK-3M
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7464 CANARA-BANK-M
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7469 State-Bank-of-India-3-M
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7471 OBEROIS-COMMATRADE-M
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.2814 RFMS-MGMT-M
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7474 State-Bank-of-India-3-M
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7476 AXIS-BANK-7-S56
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7468 Dakshin-Haryana-S53
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7473 CHOLAMANDALAM-2-S6
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.256 l2transport
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7466 BBNL-INTERNET
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7472 LIC-MUTUAL-M
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7470 HDFC-M
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7463 WI-MAX-MANAGEMENT
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7475 WI-MAX-MANAGEMENT
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7467 Dakshin-Haryana-Bijli-2-S34
+05/06/2020 12:38:40 PM findNNIconfigAudit : ====== 1 extra interface present on secondary NNI =======
+05/06/2020 12:38:40 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-2 Bundle-Ether3.2718
+05/06/2020 12:38:40 PM findNNIconfigAudit : Finding config on device : MNR-MPL-LTE-PE-RTR-42-1
+05/06/2020 12:38:43 PM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 12:38:43 PM findNNIconfigAudit : in_BUSINESS_ETH_512
+05/06/2020 12:38:43 PM findNNIconfigAudit : out_BUSINESS_ETH_512
+05/06/2020 12:38:43 PM findNNIconfigAudit : in_STANDARD_ETH_256
+05/06/2020 12:38:43 PM findNNIconfigAudit : out_STANDARD_ETH_256
+05/06/2020 12:38:43 PM findNNIconfigAudit : PARENT_in_P25_B65_S10_2048
+05/06/2020 12:38:43 PM findNNIconfigAudit : PARENT_out_P25_B65_S10_2048
+05/06/2020 12:38:43 PM findNNIconfigAudit : in_BUSINESS_ETH_2048
+05/06/2020 12:38:43 PM findNNIconfigAudit : out_BUSINESS_ETH_2048
+05/06/2020 12:38:43 PM findNNIconfigAudit : in_STANDARD_ETH_2048
+05/06/2020 12:38:43 PM findNNIconfigAudit : out_STANDARD_ETH_2048
+05/06/2020 12:38:43 PM findNNIconfigAudit : in_STANDARD_ETH_512
+05/06/2020 12:38:43 PM findNNIconfigAudit : out_STANDARD_ETH_512
+05/06/2020 12:38:43 PM findNNIconfigAudit : in_STANDARD_ETH_4096
+05/06/2020 12:38:43 PM findNNIconfigAudit : out_STANDARD_ETH_4096
+05/06/2020 12:38:43 PM findNNIconfigAudit : in_BUSINESS_ETH_1024
+05/06/2020 12:38:43 PM findNNIconfigAudit : out_BUSINESS_ETH_1024
+05/06/2020 12:38:43 PM findNNIconfigAudit : in_STANDARD_ETH_5120
+05/06/2020 12:38:43 PM findNNIconfigAudit : out_STANDARD_ETH_5120
+05/06/2020 12:38:43 PM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 12:38:43 PM findNNIconfigAudit : class-default
+05/06/2020 12:38:43 PM findNNIconfigAudit : Premium_RT
+05/06/2020 12:38:43 PM findNNIconfigAudit : BUSINESS
+05/06/2020 12:38:43 PM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 12:38:43 PM findNNIconfigAudit : Finding config on device : MNR-MPL-LTE-PE-RTR-42-2
+05/06/2020 12:38:46 PM findNNIconfigAudit : Interfaces difference between primary and secondary is 16
+05/06/2020 12:38:46 PM findNNIconfigAudit : Total config lines at primary NNI is 2685 and at secondary NNI is 1900 and diffrance is 785
+05/06/2020 12:38:46 PM findNNIconfigAudit : That took 74.48065495491028 seconds
+05/06/2020 12:57:21 PM findNNIconfigAudit : Started audit for device IP 202.123.42.1 and Bundel-Ether3
+05/06/2020 12:57:26 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:57:27 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:57:31 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:57:54 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.2 
+05/06/2020 12:57:59 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:58:00 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:58:04 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:58:26 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-2 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.1 
+05/06/2020 12:58:26 PM findNNIconfigAudit : PrimaryDevice = MNR-MPL-LTE-PE-RTR-42-1[202.123.42.1]  and SecondaryDevice = MNR-MPL-LTE-PE-RTR-42-2[202.123.42.2]
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.2814 RFMS-MGMT-M
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7465 SYNDICATE-BANK-3M
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7475 WI-MAX-MANAGEMENT
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7464 CANARA-BANK-M
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7473 CHOLAMANDALAM-2-S6
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7470 HDFC-M
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7467 Dakshin-Haryana-Bijli-2-S34
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7474 State-Bank-of-India-3-M
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7468 Dakshin-Haryana-S53
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7466 BBNL-INTERNET
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.256 l2transport
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7471 OBEROIS-COMMATRADE-M
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7472 LIC-MUTUAL-M
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7469 State-Bank-of-India-3-M
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7463 WI-MAX-MANAGEMENT
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 Bundle-Ether3.7476 AXIS-BANK-7-S56
+05/06/2020 12:58:28 PM findNNIconfigAudit : ====== 1 extra interface present on secondary NNI =======
+05/06/2020 12:58:28 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-2 Bundle-Ether3.2718
+05/06/2020 12:58:28 PM findNNIconfigAudit : Finding config on device : MNR-MPL-LTE-PE-RTR-42-1
+05/06/2020 12:58:31 PM findNNIconfigAudit : List of missed service policy on secondary NNI
+05/06/2020 12:58:31 PM findNNIconfigAudit : in_STANDARD_ETH_2048
+05/06/2020 12:58:31 PM findNNIconfigAudit : out_STANDARD_ETH_2048
+05/06/2020 12:58:31 PM findNNIconfigAudit : in_BUSINESS_ETH_512
+05/06/2020 12:58:31 PM findNNIconfigAudit : out_BUSINESS_ETH_512
+05/06/2020 12:58:31 PM findNNIconfigAudit : in_STANDARD_ETH_5120
+05/06/2020 12:58:31 PM findNNIconfigAudit : out_STANDARD_ETH_5120
+05/06/2020 12:58:31 PM findNNIconfigAudit : in_STANDARD_ETH_256
+05/06/2020 12:58:31 PM findNNIconfigAudit : out_STANDARD_ETH_256
+05/06/2020 12:58:31 PM findNNIconfigAudit : in_STANDARD_ETH_512
+05/06/2020 12:58:31 PM findNNIconfigAudit : out_STANDARD_ETH_512
+05/06/2020 12:58:31 PM findNNIconfigAudit : in_BUSINESS_ETH_2048
+05/06/2020 12:58:31 PM findNNIconfigAudit : out_BUSINESS_ETH_2048
+05/06/2020 12:58:31 PM findNNIconfigAudit : PARENT_in_P25_B65_S10_2048
+05/06/2020 12:58:31 PM findNNIconfigAudit : PARENT_out_P25_B65_S10_2048
+05/06/2020 12:58:31 PM findNNIconfigAudit : in_STANDARD_ETH_4096
+05/06/2020 12:58:31 PM findNNIconfigAudit : out_STANDARD_ETH_4096
+05/06/2020 12:58:31 PM findNNIconfigAudit : in_BUSINESS_ETH_1024
+05/06/2020 12:58:31 PM findNNIconfigAudit : out_BUSINESS_ETH_1024
+05/06/2020 12:58:31 PM findNNIconfigAudit : List of missed class-map on secondary NNI
+05/06/2020 12:58:31 PM findNNIconfigAudit : class-default
+05/06/2020 12:58:31 PM findNNIconfigAudit : Premium_RT
+05/06/2020 12:58:31 PM findNNIconfigAudit : BUSINESS
+05/06/2020 12:58:31 PM findNNIconfigAudit : List of missed BGP route-map on secondary NNI , Configured it Manually
+05/06/2020 12:58:31 PM findNNIconfigAudit : Finding config on device : MNR-MPL-LTE-PE-RTR-42-2
+05/06/2020 12:58:35 PM findNNIconfigAudit : Interfaces difference between primary and secondary is 16
+05/06/2020 12:58:35 PM findNNIconfigAudit : Total config lines at primary NNI is 2685 and at secondary NNI is 2174 and diffrance is 511
+05/06/2020 12:58:35 PM findNNIconfigAudit : That took 73.59643959999084 seconds
+05/06/2020 12:59:01 PM findNNIconfigAudit : Started audit for device IP 202.123.42.155 and Bundel-Ether3
+05/06/2020 12:59:06 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:59:07 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:59:12 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:59:17 PM findNNIconfigAudit : KHP-MPL-LTE-PE-RTR-42-155 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.123 
+05/06/2020 12:59:22 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/06/2020 12:59:23 PM findNNIconfigAudit : Authentication (password) successful!
+05/06/2020 12:59:28 PM findNNIconfigAudit : promptOutput is 
+05/06/2020 12:59:32 PM findNNIconfigAudit : KHP-MPL-LTE-PE-RTR-42-123 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.155 
+05/06/2020 12:59:32 PM findNNIconfigAudit : PrimaryDevice = KHP-MPL-LTE-PE-RTR-42-123[202.123.42.123]  and SecondaryDevice = KHP-MPL-LTE-PE-RTR-42-155[202.123.42.155]
+05/07/2020 02:17:22 PM findNNIconfigAudit : Started audit for device IP 202.123.42.155 and Bundel-Ether3
+05/07/2020 02:17:28 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 02:17:29 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 02:17:34 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 02:17:39 PM findNNIconfigAudit : KHP-MPL-LTE-PE-RTR-42-155 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.123 
+05/07/2020 02:17:44 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 02:17:45 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 02:17:50 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 02:17:53 PM findNNIconfigAudit : KHP-MPL-LTE-PE-RTR-42-123 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.155 
+05/07/2020 02:17:53 PM findNNIconfigAudit : PrimaryDevice = KHP-MPL-LTE-PE-RTR-42-123[202.123.42.123]  and SecondaryDevice = KHP-MPL-LTE-PE-RTR-42-155[202.123.42.155]
+05/07/2020 03:24:37 PM findNNIconfigAudit : Started audit for device IP 202.123.42.155 and Bundel-Ether3
+05/07/2020 03:24:43 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 03:24:44 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 03:24:49 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 03:24:53 PM findNNIconfigAudit : KHP-MPL-LTE-PE-RTR-42-155 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.123 
+05/07/2020 03:24:59 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 03:25:00 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 03:25:04 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 03:25:08 PM findNNIconfigAudit : KHP-MPL-LTE-PE-RTR-42-123 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.155 
+05/07/2020 03:25:08 PM findNNIconfigAudit : PrimaryDevice = KHP-MPL-LTE-PE-RTR-42-123[202.123.42.123]  and SecondaryDevice = KHP-MPL-LTE-PE-RTR-42-155[202.123.42.155]
+05/07/2020 03:45:04 PM findNNIconfigAudit : Started audit for device IP 202.123.42.155 and Bundel-Ether3
+05/07/2020 03:45:09 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 03:45:10 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 03:45:15 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 03:45:20 PM findNNIconfigAudit : KHP-MPL-LTE-PE-RTR-42-155 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.123 
+05/07/2020 03:45:25 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 03:45:26 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 03:45:30 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 03:45:34 PM findNNIconfigAudit : KHP-MPL-LTE-PE-RTR-42-123 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.155 
+05/07/2020 03:45:34 PM findNNIconfigAudit : PrimaryDevice = KHP-MPL-LTE-PE-RTR-42-123[202.123.42.123]  and SecondaryDevice = KHP-MPL-LTE-PE-RTR-42-155[202.123.42.155]
+05/07/2020 03:54:52 PM findNNIconfigAudit : Started audit for device IP 202.123.42.147 and Bundel-Ether7
+05/07/2020 03:54:57 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 03:54:58 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 03:55:03 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 03:55:13 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-147 has Primary NNI of Bundle-Ether7 and peer device is 202.123.42.148 
+05/07/2020 03:55:18 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 03:55:19 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 03:55:24 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 03:55:31 PM findNNIconfigAudit : JMD-MPL-LTE-PE-RTR-42-148 has Secondary NNI of Bundle-Ether7 and peer device is 202.123.42.147 
+05/07/2020 03:55:31 PM findNNIconfigAudit : PrimaryDevice = JMD-MPL-LTE-PE-RTR-42-147[202.123.42.147]  and SecondaryDevice = JMD-MPL-LTE-PE-RTR-42-148[202.123.42.148]
+05/07/2020 03:56:50 PM findNNIconfigAudit : Started audit for device IP 202.123.42.1 and Bundel-Ether3
+05/07/2020 03:56:55 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 03:56:56 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 03:57:01 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 03:57:24 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-1 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.2 
+05/07/2020 03:57:29 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 03:57:29 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 03:57:34 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 03:57:57 PM findNNIconfigAudit : MNR-MPL-LTE-PE-RTR-42-2 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.1 
+05/07/2020 03:57:57 PM findNNIconfigAudit : PrimaryDevice = MNR-MPL-LTE-PE-RTR-42-1[202.123.42.1]  and SecondaryDevice = MNR-MPL-LTE-PE-RTR-42-2[202.123.42.2]
+05/07/2020 03:58:48 PM findNNIconfigAudit : Started audit for device IP 202.123.42.152 and Bundel-Ether2
+05/07/2020 03:58:53 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 03:58:55 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 03:59:01 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 03:59:20 PM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-152 has Secondary NNI of Bundle-Ether2 and peer device is 202.123.42.120 
+05/07/2020 03:59:27 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 03:59:27 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 03:59:32 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 03:59:52 PM findNNIconfigAudit : ASN-MPL-LTE-PE-RTR-42-120 has Primary NNI of Bundle-Ether2 and peer device is 202.123.42.152 
+05/07/2020 03:59:52 PM findNNIconfigAudit : PrimaryDevice = ASN-MPL-LTE-PE-RTR-42-120[202.123.42.120]  and SecondaryDevice = ASN-MPL-LTE-PE-RTR-42-152[202.123.42.152]
+05/07/2020 04:00:45 PM findNNIconfigAudit : Started audit for device IP 202.123.37.146 and Bundel-Ether20
+05/07/2020 04:00:50 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 04:00:51 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 04:00:56 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 04:01:10 PM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-146 has Secondary NNI of Bundle-Ether20 and peer device is 202.123.37.147 
+05/07/2020 04:01:11 PM findNNIconfigAudit : Started audit for device IP 202.123.37.146 and Bundel-Ether20
+05/07/2020 04:01:15 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 04:01:16 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 04:01:16 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 04:01:17 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 04:01:21 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 04:01:22 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 04:01:34 PM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 has Primary NNI of Bundle-Ether20 and peer device is 202.123.37.146 
+05/07/2020 04:01:34 PM findNNIconfigAudit : PrimaryDevice = CUT-MPL-LTE-PE-RTR-37-147[202.123.37.147]  and SecondaryDevice = CUT-MPL-LTE-PE-RTR-37-146[202.123.37.146]
+05/07/2020 04:01:36 PM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-146 has Secondary NNI of Bundle-Ether20 and peer device is 202.123.37.147 
+05/07/2020 04:01:41 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 04:01:42 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 04:01:47 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 04:02:00 PM findNNIconfigAudit : CUT-MPL-LTE-PE-RTR-37-147 has Primary NNI of Bundle-Ether20 and peer device is 202.123.37.146 
+05/07/2020 04:02:00 PM findNNIconfigAudit : PrimaryDevice = CUT-MPL-LTE-PE-RTR-37-147[202.123.37.147]  and SecondaryDevice = CUT-MPL-LTE-PE-RTR-37-146[202.123.37.146]
+05/07/2020 04:02:40 PM findNNIconfigAudit : Started audit for device IP 202.123.42.20 and Bundel-Ether3
+05/07/2020 04:02:45 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 04:02:46 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 04:02:50 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 04:03:10 PM findNNIconfigAudit : Started audit for device IP 202.123.42.20 and Bundel-Ether3
+05/07/2020 04:03:13 PM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-20 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.64 
+05/07/2020 04:03:16 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 04:03:16 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 04:03:19 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 04:03:19 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 04:03:21 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 04:03:24 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 04:03:44 PM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-20 has Primary NNI of Bundle-Ether3 and peer device is 202.123.42.64 
+05/07/2020 04:03:48 PM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-64 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.20 
+05/07/2020 04:03:48 PM findNNIconfigAudit : PrimaryDevice = MUM-CHV-MPL-LTE-PE-RTR-42-20[202.123.42.20]  and SecondaryDevice = MUM-CHV-MPL-LTE-PE-RTR-42-64[202.123.42.64]
+05/07/2020 04:03:49 PM findNNIconfigAudit : Connected (version 2.0, client Cisco-2.0)
+05/07/2020 04:03:50 PM findNNIconfigAudit : Authentication (password) successful!
+05/07/2020 04:03:55 PM findNNIconfigAudit : promptOutput is 
+05/07/2020 04:04:19 PM findNNIconfigAudit : MUM-CHV-MPL-LTE-PE-RTR-42-64 has Secondary NNI of Bundle-Ether3 and peer device is 202.123.42.20 
+05/07/2020 04:04:19 PM findNNIconfigAudit : PrimaryDevice = MUM-CHV-MPL-LTE-PE-RTR-42-20[202.123.42.20]  and SecondaryDevice = MUM-CHV-MPL-LTE-PE-RTR-42-64[202.123.42.64]

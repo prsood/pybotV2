@@ -145,6 +145,7 @@ aside a:hover {
   overflow-x: auto;
 }
 
+
 .terminal-window .terminal_header {
   background: #282D35;
   height: 2.5vw;
@@ -386,6 +387,7 @@ position: absolute;
   margin-right: 2.6rem;
   box-shadow: 0 0 0 white;
   transition: all 0.2s;
+  text-decoration: none;
 }
 
 .btn:last-child {

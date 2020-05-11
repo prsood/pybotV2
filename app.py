@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_from_directory,redirect,flash,session
+from flask import Flask, render_template, request, send_from_directory,redirect,flash,session,Response,stream_with_context
 from flask import send_file
 import subprocess, sys
 import pexpect
@@ -14,6 +14,7 @@ from application import application
 from werkzeug.utils import secure_filename
 import datetime
 import fnmatch
+import time
 
 
 def sqlliteQueryResult():
@@ -361,7 +362,7 @@ def upload_form():
 def upload_file():
 	if request.method == 'POST':
 		def remove_file():
-			location=(r"/data/PROJECTS/NOC_OPTICS_TAC3_Project/rawdata/")
+			location=(r"/data/PROJECTS/NOC_OPTICS_TAC3_Project/rawdata/inventory/")
 			for file in os.listdir(location):
 				if fnmatch.fnmatch(file, '*Query*'):
 					os.remove(location+file)
@@ -397,8 +398,8 @@ def process_file():
 def download_file():
 	
 	date_object = str(datetime.date.today())
-	path=(r"/data/PROJECTS/NOC_OPTICS_TAC3_Project/rawdata"+"/Report"+"_"+date_object+".csv")
-	return send_file(path,mimetype='text/csv',attachment_filename='Processed_Report_.csv',as_attachment=True)
+	path=(r"/data/PROJECTS/NOC_OPTICS_TAC3_Project/rawdata/processed_reports"+"/Huawei_Report"+"_"+date_object+".csv")
+	return send_file(path,mimetype='text/csv',attachment_filename='Huawei_Processed_Report_.csv',as_attachment=True)
 
 ######################################TWAMP##########################################################
 def allowed_file(filename):
@@ -416,7 +417,7 @@ def allowed_file(filename):
 @app.route("/twamp", methods=["GET", "POST"])
 def twamp():
     f = []
-    for (dirpath, dirnames, filenames) in os.walk("/data/vivek/twampFiles"):
+    for (dirpath, dirnames, filenames) in os.walk("/home/Python_Tool/twampDataProcess/inputExcelFiles/"):
         f.extend(filenames)
         break
     print(f)
@@ -438,6 +439,33 @@ def twamp():
                 return redirect(request.url)
     
     return render_template("twamp.html",f=f)
+
+@app.route('/runtwamp/')
+def runtwampn():
+    return render_template("runtwamp.html")
+
+def stream_template(template_name, **context):                                                                                                                                                 
+    app.update_template_context(context)                                                                                                                                                       
+    t = app.jinja_env.get_template(template_name)                                                                                                                                              
+    rv = t.stream(context)                                                                                                                                                                     
+    rv.disable_buffering()                                                                                                                                                                     
+    return rv                                                                                                                                                                                  
+
+                                                                                                                                                     
+def generate():   
+    command = f"/home/Python_Tool/twampDataProcess/twampDataProcess.py"                                                                                                                                                                             
+    cmd = ["sudo", "python3", "-u",command, "-p",str(40),"-d",str(7)]   # -u: don't buffer output
+    proc = subprocess.Popen(cmd,stdout=subprocess.PIPE)
+    for line in proc.stdout:
+        print(type(line.decode()))
+        yield line.decode()
+        time.sleep(1)  
+
+@app.route('/runtwamp1/')
+def runtwamp1():
+    rows = generate()                                                                                                                                                                          
+    return Response(stream_template('outputFortwamp.html', rows=stream_with_context(rows)))
+   
    
 
 

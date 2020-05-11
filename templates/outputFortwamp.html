@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+{% extends "root.html" %}
+{% block content %}
+<div class="terminal-window" id='terminal-window'>
+    <div class="terminal_header">
+        <div class="button green"></div>
+        <div class="button yellow"></div>
+        <div class="button red"></div>
+    </div>
+    <section id="terminal" class="terminal">
+        {% for item in rows %}
+        {{ item }}<br />
+        <script>
+            var objDiv = document.getElementById("terminal");
+            objDiv.scrollTop = objDiv.scrollHeight;
+        </script>
+        {% endfor %}
+    </section>
+
+
+</div>
+
+
+
+{% endblock %}

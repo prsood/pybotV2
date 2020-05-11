@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<html>
+<div class="loaderback">
+    <div class="loadingtext">Generating Output<br /><br />Please Wait this might take some time</div>
+    <div class="loader">
+        <svg>
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2"
+                        result="gooey" />
+                    <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+</div>
+
+{% extends "root.html" %}
+{% block content %}
+
+<div class="terminal-window" id='terminal-window'>
+    <div class="terminal_header">
+        <div class="button green"></div>
+        <div class="button yellow"></div>
+        <div class="button red"></div>
+    </div>
+    <section class="terminal">
+        &#128250; NNI Audit Utility<br><br>
+
+        <span data-ty-prompt="▲">Enter username, password, Device IP and Bundle ID to generate output </span><br><br>
+        <form id="form" method="POST">
+            <div class="block">
+                <span data-ty-prompt="➜" /><span data-ty-prompt1="Packet drop threshold -->"></span>
+                <input  style="left:24vw" name="form" class="traceroute_input" type="text" />
+            </div><br>
+            <div class="block">
+                <span data-ty-prompt="➜" /><span data-ty-prompt1="Number of days for Comparision -->"></span>
+                <input style="left:24vw" name="form1" class="traceroute_input" type="text" />
+            </div><br>
+            <input  style="left:24vw" type="submit" class="btn" onclick="loading()"></input>
+            <br><br>
+        </form>
+
+        <p id="clock">Here will be date|time</p>
+        <br><br>
+
+
+
+
+    </section>
+</div>
+<script>
+    function loading() {
+        console.log("hello")
+        //document.querySelector(".loaderback").style.display = "block";
+    }
+    if(typeof(EventSource)!=="undefined") {
+        var source=new EventSource("/runtwamp1/");
+        source.onmessage=function(event) {
+            console.log("Hello")
+          document.getElementById("clock").innerHTML+=event.data + "<br>";
+        };
+      } else {
+        document.getElementById("clock").innerHTML="Sorry, your browser does not support server-sent events...";
+      }
+    // var clock = document.getElementById("clock");
+
+    
+    //     fetch("{{ url_for('runtwamp1') }}")
+    //     .then(response => {
+    //             response.text().then(t => {
+    //                 console.log(t)
+    //                 clock.innerHTML += "<pre>" + t + "<br>" + "</pre>"
+    //                 })
+    //         });
+      
+
+</script>
+
+{% endblock %}
+
+</html>

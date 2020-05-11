@@ -2,7 +2,7 @@
 
 from flask import Flask
 
-UPLOAD_FOLDER = (r'/data/PROJECTS/NOC_OPTICS_TAC3_Project/rawdata/')
+UPLOAD_FOLDER = (r'/data/PROJECTS/NOC_OPTICS_TAC3_Project/rawdata/inventory/')
 
 application = Flask(__name__)
 application.secret_key = "secret key"
