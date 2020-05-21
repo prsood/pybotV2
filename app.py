@@ -311,7 +311,7 @@ def nniaudit():
 def nniaudit_form():
     username = request.form['form']
     password = request.form['form1']
-    deviceIp = request.form['form2']
+    deviceIp = request.form['form2'] #
     bundleId = int(request.form['form3'])
     command = "sudo python3 /home/Python_Tool/nniAuditScript/nniAuditScripttest.py -u %s -p '%s' -deviceip %s -bundleid %d"%(username,password,deviceIp,bundleId)
     try:list_services = subprocess.check_output(command,shell=True).decode()
