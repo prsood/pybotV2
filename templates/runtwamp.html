@@ -33,51 +33,24 @@
         <form id="form" method="POST">
             <div class="block">
                 <span data-ty-prompt="➜" /><span data-ty-prompt1="Packet drop threshold -->"></span>
-                <input  style="left:24vw" name="form" class="traceroute_input" type="text" />
+                <input  style="left:24vw" name="form" class="traceroute_input" type="text" placeholder="Default 40"/>
             </div><br>
             <div class="block">
                 <span data-ty-prompt="➜" /><span data-ty-prompt1="Number of days for Comparision -->"></span>
-                <input style="left:24vw" name="form1" class="traceroute_input" type="text" />
+                <input style="left:24vw" name="form1" class="traceroute_input" type="text" placeholder="Default 7"/>
             </div><br>
             <input  style="left:24vw" type="submit" class="btn" onclick="loading()"></input>
             <br><br>
         </form>
-
-        <p id="clock">Here will be date|time</p>
-        <br><br>
-
-
-
-
     </section>
 </div>
+
 <script>
-    function loading() {
-        console.log("hello")
-        //document.querySelector(".loaderback").style.display = "block";
+    function loading(){
+        document.querySelector(".loaderback").style.display = "block";
     }
-    if(typeof(EventSource)!=="undefined") {
-        var source=new EventSource("/runtwamp1/");
-        source.onmessage=function(event) {
-            console.log("Hello")
-          document.getElementById("clock").innerHTML+=event.data + "<br>";
-        };
-      } else {
-        document.getElementById("clock").innerHTML="Sorry, your browser does not support server-sent events...";
-      }
-    // var clock = document.getElementById("clock");
-
     
-    //     fetch("{{ url_for('runtwamp1') }}")
-    //     .then(response => {
-    //             response.text().then(t => {
-    //                 console.log(t)
-    //                 clock.innerHTML += "<pre>" + t + "<br>" + "</pre>"
-    //                 })
-    //         });
-      
-
-</script>
+</script>  
 
 {% endblock %}
 

@@ -15,6 +15,10 @@ from werkzeug.utils import secure_filename
 import datetime
 import fnmatch
 import time
+from file_verify import *
+
+##Depended Scripts for Network Alarms Processing Tool
+#1)Applicaton.py #2)file_verify.py #3)/data/Project
 
 
 def sqlliteQueryResult():
@@ -223,9 +227,6 @@ def traceroute_form():
 
     pobj.expect("Input ping repeat count", timeout=10)
     pobj.sendline(ping_count)
-
-
-
     pobj.expect('root@', timeout=600)
 
 
@@ -277,6 +278,10 @@ def kpi_6():
 @app.route('/kpi-7') # this is a job for GET, not POST
 def kpi_7():
     return send_file('/home/Python_Tool/Auto_Scripts/KPI-Files/Junos-ISP-Interface.csv',mimetype='text/csv',attachment_filename='JUNIPER-ISP-Interface.csv',as_attachment=True)
+
+@app.route('/kpi-8') # this is a job for GET, not POST
+def kpi_8():
+    return send_file('/home/Python_Tool/Auto_Scripts/KPI-Files/kpi-8.csv',mimetype='text/csv',attachment_filename='MPLS-BGP-Static-Deviation.csv',as_attachment=True)
 
 @app.route('/nni-kpi-1') # this is a job for GET, not POST  #For NNI Reports 
 def nni_kpi_1():
@@ -346,62 +351,65 @@ def feedback_form():
             msg="Your feedback has been successfully submited."
             return render_template("feedback.html",msg=msg)  
 
-
-##################Optics-TAC3-Report-Generator############################
-
+####################################################Network Alarms Processing Tool###################################################
 ALLOWED_EXTENSIONS = set(['xlsx'])
 
 def allowed_file(filename):
-	return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-	
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+    
 @app.route('/tac3report')
 def upload_form():
-	return render_template('tac3opticsreport.html')
+    return render_template('tac3opticsreport.html')
 
 @app.route('/tac3report', methods=['POST'])
 def upload_file():
-	if request.method == 'POST':
-		def remove_file():
-			location=(r"/data/PROJECTS/NOC_OPTICS_TAC3_Project/rawdata/inventory/")
-			for file in os.listdir(location):
-				if fnmatch.fnmatch(file, '*Query*'):
-					os.remove(location+file)
-		remove_file()
-
-# check if the post request has the files part
-		if 'files[]' not in request.files:
-			flash('No file part')
-			return redirect(request.url)
-		files = request.files.getlist('files[]')
-		for file in files:
-			if file and allowed_file(file.filename):
-				filename = secure_filename(file.filename)
-				file.save(os.path.join(application.config['UPLOAD_FOLDER'], filename))
-		flash('File(s) successfully uploaded')
-		return redirect('/tac3report')
+    if request.method == 'POST':
+        get_file_names_and_remove() #To remove old files 
+        #Check if the post request has the files part
+        if 'files[]' not in request.files:
+            flash('No file part')
+            return redirect(request.url)
+        files = request.files.getlist('files[]')
+        for file in files:
+            if file and allowed_file(file.filename):
+                filename = secure_filename(file.filename)
+                file.save(os.path.join(application.config['UPLOAD_FOLDER'], filename))
+        flash('File(s) successfully uploaded')
+        return redirect('/tac3report')
 
 @app.route('/processtac3report',methods=['POST'])
 def process_file():
-    
-	cmd = r"sudo python3.6 /data/PROJECTS/NOC_OPTICS_TAC3_Project/WebApp/excel_process.py"
-	p = subprocess.Popen(cmd, shell=True, stderr=subprocess.PIPE)
-	p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
-	(output, err) = p.communicate()  
-	p_status = p.wait()
-	print(output)
-	if b"Report has been generated successfully" not in output:flash("Please upload or check the uploaded files.")
-	if b"Report has been generated successfully" in output:flash("Report has been generated successfully.")
+    file_type=file_in_directory()
+    if file_type=="huawei":
+        cmd = r"sudo python3.6 /data/PROJECTS/NAPT_Project/WebApp/huawei_excel_process.py"
+    if file_type=="ciena":
+        cmd = r"sudo python3.6 /data/PROJECTS/NAPT_Project/WebApp/ciena_excel_process.py"
+    p = subprocess.Popen(cmd, shell=True, stderr=subprocess.PIPE)
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
+    (output, err) = p.communicate()  
+    p_status = p.wait()
+    print(output)
+    if b"Report has been generated successfully" not in output:flash("Please upload or check the uploaded files.")
+    if b"Report has been generated successfully" in output:flash("Report has been generated successfully.")
 
-	return redirect('/tac3report')
+    return redirect('/tac3report')
 
 @app.route('/downloadtac3report',methods=['POST'])
 def download_file():
-	
-	date_object = str(datetime.date.today())
-	path=(r"/data/PROJECTS/NOC_OPTICS_TAC3_Project/rawdata/processed_reports"+"/Huawei_Report"+"_"+date_object+".csv")
-	return send_file(path,mimetype='text/csv',attachment_filename='Huawei_Processed_Report_.csv',as_attachment=True)
 
-######################################TWAMP##########################################################
+    date_object = str(datetime.date.today())
+    location=(r"/data/PROJECTS/NAPT_Project/rawdata/inventory/")
+    file_type=file_in_directory()
+    if file_type=="huawei":
+        path=(r"/data/PROJECTS/NAPT_Project/rawdata/processed_reports"+"/Huawei_Report"+"_"+date_object+".csv")
+        return send_file(path,mimetype='text/csv',attachment_filename='Huawei_Processed_Report_'+date_object+'.csv',as_attachment=True)
+
+    if file_type=="ciena":
+        path=(r"/data/PROJECTS/NAPT_Project/rawdata/processed_reports"+"/Ciena_Report"+"_"+date_object+".csv")
+        return send_file(path,mimetype='text/csv',attachment_filename='Ciena_Processed_Report_'+date_object+'.csv',as_attachment=True)
+
+###############################################################TWAMP##########################################################
+
 def allowed_file(filename):
 
     if not "." in filename:
@@ -444,27 +452,34 @@ def twamp():
 def runtwampn():
     return render_template("runtwamp.html")
 
-def stream_template(template_name, **context):                                                                                                                                                 
-    app.update_template_context(context)                                                                                                                                                       
-    t = app.jinja_env.get_template(template_name)                                                                                                                                              
-    rv = t.stream(context)                                                                                                                                                                     
-    rv.disable_buffering()                                                                                                                                                                     
-    return rv                                                                                                                                                                                  
+# def stream_template(template_name, **context):                                                                                                                                                 
+#     app.update_template_context(context)          #for dynamic output check commented code in outputFortwamp.html                                                                                                                                             
+#     t = app.jinja_env.get_template(template_name)                                                                                                                                              
+#     rv = t.stream(context)                                                                                                                                                                     
+#     rv.disable_buffering()                                                                                                                                                                     
+#     return rv                                                                                                                                                                                  
 
                                                                                                                                                      
-def generate():   
-    command = f"/home/Python_Tool/twampDataProcess/twampDataProcess.py"                                                                                                                                                                             
-    cmd = ["sudo", "python3", "-u",command, "-p",str(40),"-d",str(7)]   # -u: don't buffer output
-    proc = subprocess.Popen(cmd,stdout=subprocess.PIPE)
-    for line in proc.stdout:
-        print(type(line.decode()))
-        yield line.decode()
-        time.sleep(1)  
+# def generate(p,d):   
+#     command = f"/home/Python_Tool/twampDataProcess/twampDataProcess.py"                                                                                                                                                                             
+#     cmd = ["sudo", "python3", "-u",command, "-p",p,"-d",d]   # -u: don't buffer output
+#     proc = subprocess.Popen(cmd,stdout=subprocess.PIPE)
+#     for line in proc.stdout:
+#         yield line.decode()
+#         time.sleep(0.100)  
 
-@app.route('/runtwamp1/')
+@app.route('/runtwamp/',methods=['POST'])
 def runtwamp1():
-    rows = generate()                                                                                                                                                                          
-    return Response(stream_template('outputFortwamp.html', rows=stream_with_context(rows)))
+    packet = request.form['form']
+    days = request.form['form1']
+    command = f"/home/Python_Tool/twampDataProcess/twampDataProcess.py"                                                                                                                                                                             
+    cmd = ["sudo", "python3", "-u",command, "-p",packet,"-d",days]
+    # rows = generate(packet,days)                                                                                                                                                                          
+    # return Response(stream_template('outputFortwamp.html', rows=stream_with_context(rows)))
+    try:list_services = subprocess.check_output(cmd).decode()
+    except subprocess.CalledProcessError as e: list_services = str(e.output.decode())
+    print("hello")
+    return render_template('outputFortwamp.html')
    
    
 

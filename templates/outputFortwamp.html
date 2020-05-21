@@ -12,8 +12,9 @@
         <div class="button red"></div>
     </div>
     <section id="terminal" class="terminal">
+        <span  data-ty-prompt="▲">Your output will shortly be generated</span><br><br>
         {% for item in rows %}
-        {{ item }}<br />
+        <span  data-ty-prompt="$">{{ item }}</span><br />
         <script>
             var objDiv = document.getElementById("terminal");
             objDiv.scrollTop = objDiv.scrollHeight;
